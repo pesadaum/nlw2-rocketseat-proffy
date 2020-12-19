@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Ensinar </title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+</head>
+
+<body class="bg-gray-200">
+
+    <header class="p-4 bg-gradient-to-l from-purple-400 to-purple-700 flex flex-col">
+        <div class="mb-8 flex flex-row justify-between items-center md:pl-24 md:pr-24 md:pt-8" >
+            <a class="transition duration-200 ease-in-out transform hover:scale-110" href="./index.html">
+                <img src="../../images/icons/back.svg" alt="Seta para voltar">
+            </a>
+            <img class="h-6" src="../../images/logo.svg" alt=" Logo Proffy">
+        </div>
+        <span class="text-gray-100 md:self-center ">
+        <h1 class=" text-3xl font-bold mt-4 mb-4">Que incrível que você quer dar aulas!</h1>
+        <h2 class="text-l font-semibold mt-6" > Preencha o formulário a seguir e nos conte mais sobre você.</h2>
+        </span>
+    </header>
+
+    <form class=" flex flex-row justify-center " action="" method="POST">
+        <fieldset class="bg-white flex flex-col m-4 p-4 rounded lg:w-1/2">
+            <fieldset class="flex flex-col">
+                <h1 class="mb-2 text-2xl font-medium">Seus dados</h1>
+                <hr>
+                
+                <label class="mt-6 mb-2" for="name"> Nome completo </label>
+                <input class="bg-gray-100 rounded h-12 p-2 mb-4" placeholder="Digite seu nome completo" type="name" name="name" id="name">
+                
+                <label class="mt-2 mb-2" for="photo"> Link da sua foto </label>
+                <input class="bg-gray-100 rounded h-12 p-2 mb-4 " placeholder=" Comece com ''https://'' " type="url" name="photo" id="url">
+                
+                <label class="mt-2 mb-2" for="tel"> Whatsapp </label>
+                <input class="bg-gray-100 rounded h-12 p-2 mb-4 " placeholder="Ex (31) 1234-5678" type="tel" name="tel" id="tel">
+
+                <label class="mt-2 mb-2" for="bio"> Biografia </label>
+                <textarea class="bg-gray-100 rounded p-2 mb-4 " placeholder="Escreva um pouco sobre você, onde estudou, seus interesses..." type="tel" name="bio" id="bio" rows="7" cols="10"></textarea>
+            </fieldset>
+
+            
+            <fieldset class="flex flex-col ">
+                <h1 class=" mt-10 mb-2 text-2xl font-medium"> Sobre a aula</h1>
+                <hr>
+
+                <label class="mt-6 mb-2" for="subject"> Matéria </label>
+                <input class="bg-gray-100 rounded h-12 p-2 mb-4 " placeholder="Ex: Português, Matemática, Eletrônica,  Mec. Fluidos..." type="subject" name="subject" id="subject">
+
+                <label class="mt-2 mb-2" for="price"> Custo da hora-aula </label>
+                <input class="bg-gray-100 rounded h-12 p-2 mb-4 " placeholder="Digite um valor" type="number" name="price" id="price">
+
+            </fieldset>
+
+            <fieldset class="flex flex-col">
+                <span class="flex flex-row mt-10 mb-2 items-center justify-between">
+                    <h1 class="  text-2xl font-medium mr-4"> Horários disponíveis </h1>
+                    <a class="font-medium text-purple-600 transition duration-200 ease-in-out transform hover:scale-110" href="#"> + Novo horário</a>
+                </span>
+                <hr>
+                <div class=" mt-4 flex flex-col">
+                    <label class="mt-2 mb-2" for="price"> Dia da Semana </label>
+                    <input class="bg-gray-100 rounded h-12 p-2 mb-4 flex flex-row" placeholder="Segunda, terça..." type="text" name="price" id="price">
+                </div>
+
+                
+                <div class=" flex flex-col">
+                    <label class="mt-2 mb-2" for="startHour"> Das </label>
+                    <input class="bg-gray-100 rounded h-12  p-2 mb-4 " type="time" name="startHour" id="startHour">
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="mt-2 mb-2" for="endHour"> Até </label>
+                    <input class="bg-gray-100 rounded h-12  p-2 mb-4 " type="time" name="endHour" id="endHour">  
+                </div>
+
+                <hr>
+                </fieldset> 
+                <footer class=" mt-4 flex flex-row justify-between items-center">
+                    <div class="flex flex-row items-center">
+                        <img class="m-4" src="../../images/icons/warning.svg" alt="Aviso de importante">
+                        <p class="text-purple-800 text-sm mr-4"> Importante! Preencha todos os dados</p>
+                    </div>
+
+                    <button class=" p-4 bg-green-500 rounded text-white font-bold transition duration-200 ease-in-out transform hover:scale-110 " type="submit"> Concluir cadastro</button>
+
+                </footer>
+        </fieldset>
+    </form>
+
+    <footer class=" m-8 flex flex-row items-center justify-between">
+        <img class="w-24 mr-8" src="../../images/logo.svg" alt="Logo proffy">
+        <a class="text-gray-500" href="#"> Sua plataforma de estudos online </a>
+
+    </footer>
+
+</body>
+</html>

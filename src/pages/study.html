@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Estudar </title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+</head>
+
+<body class="bg-gray-200 "> 
+
+    <header class="p-4 bg-gradient-to-l from-purple-400 to-purple-700 ">
+    <div class="mb-8 flex flex-row justify-between items-center md:pl-24 md:pr-24 md:pt-8" >
+        <a class="transition duration-200 ease-in-out transform hover:scale-110"  href="./index.html">
+            <img src="../../images/icons/back.svg" alt="Seta para voltar">
+        </a>
+        <img class="h-6" src="../../images/logo.svg" alt=" Logo Proffy">
+        
+    </div>
+
+    <h1 class="text-gray-100 text-3xl font-bold mt-4 mb-4 md:flex md:justify-center">Estes são os proffys disponíveis:</h1>
+
+    <form action="study.html">
+        <fieldset class="flex flex-col md:flex-row md:justify-center md:items-baseline md:m-0 md:p-0 ">
+
+            <fieldset class="flex flex-col md:mr-4" >
+                <label class="text-gray-100 font-bold  mb-2 mt-2" for="subject"> Matéria</label>
+                <input class="rounded h-10 p-2" type="text" name="subject" id="subject" placeholder="Digite a matéria">
+            </fieldset>
+            
+            <fieldset class="flex flex-col md:mr-4">
+                <label class="text-gray-100 font-bold  mb-2 mt-2" for="time"> Horário</label>
+                <input class="rounded h-10 p-2" type="time" name="time" id="time">
+            </fieldset>
+
+            <fieldset class="flex flex-col md:mr-4" >
+                <label class="text-gray-100 font-bold  mb-2 mt-2" for="date"> Dia da semana</label>
+                <select class=" rounded h-10 p-2 bg-white" name="date" id="date">
+                    <option class="text-gray-400" value="0"> Selecione um dia</option>
+                    <option value="1">Domingo</option>
+                    <option value="2">Segunda</option>
+                    <option value="3">Terça</option>
+                    <option value="4">Quarta</option>
+                    <option value="5">Quinta</option>
+                    <option value="6">Sexta</option>
+                    <option value="7">Sábado</option>
+                </select>
+            </fieldset>
+            
+            <button class="bg-green-500 rounded mt-8 p-2 text-white font-medium transition duration-200 ease-in-out transform hover:scale-110 md:self-end md:w-48" type="submit"> Filtrar</button> 
+        </fieldset>
+    </form>
+    </header>
+
+
+    <main class="m-2 p-2 md:grid grid-cols-2 lg:grid-cols-3 md:gap-2 ">
+        <div id="card1" class="mb-2 bg-white rounded">
+            <div class="flex flex-row">
+                <img class=" m-2 rounded-full h-12 w-12" src="https://scontent.fbhz8-1.fna.fbcdn.net/v/t31.0-8/25587958_1518417781556788_4113813335670841884_o.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=dkC1g1HHAykAX85ZrON&_nc_ht=scontent.fbhz8-1.fna&oh=47723210b8b300b2ad05bea0eb62805e&oe=60015C40" alt="Foto de perfil do professor">
+                
+                <span class="m-2">
+                <h1 class="font-bold text-purple-900 text-l"> Alef Santos </h1>
+                <h2 class="text-xs text-gray-700" > Desenvolvimento Front-end </h2>
+                </span>
+             </div>
+             <hr>
+
+            <span class="flex flex-col p-2 m-2 text-sm">
+                <h1 class="mb-4">Aluno na Universidade Federal de Itajubá - UNIFEI</h1>
+                <p class="mb-2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla nobis fugiat obcaecati, reiciendis laborum, accusantium at repudiandae et tempora facere dicta suscipit pariatur voluptates est molestias perferendis cum odio. <p>
+            </span>
+
+            <hr>
+            <footer class=" mt-2 flex flex-row justify-between items-center">
+                <span class="flex flex-row">
+                <h1> Preço/hora: </h1>
+                <h2 class=" mr-4 font-semibold text-purple-900 ml-2 " > R$ 60,00</h2>
+                </span>
+                <a class= " p-2 flex flex-row bg-green-400 rounded h-10 items-center text-xs text-white font-bold transition duration-200 ease-in-out transform hover:scale-110" href="https://api.whatsapp.com/send?phone=5531989554087"> <img class="m-2" src="../../images/icons/whatsapp.svg" alt=""> Envie uma mensagem </a>
+            </footer>
+        </div>
+
+        <div id="card2" class="mb-2 bg-white rounded">
+            <header class="flex flex-row">
+                <img class=" m-2 rounded-full h-12 w-12" src="https://scontent.fbhz8-1.fna.fbcdn.net/v/t1.0-9/49025943_1820736998035032_1399376099669966848_n.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=fZK3g3lk-KgAX_eB_YI&_nc_ht=scontent.fbhz8-1.fna&oh=d13c4dcf4c99b94ac65df17a4ef46ff2&oe=600252C3" alt="Foto de perfil do professor">
+                
+                <span class="m-2">
+                    <h1 class="font-bold text-purple-900 text-l"> Larissa Gabriela </h1>
+                    <h2 class="text-xs text-gray-700" > Marketing Digital </h2>
+                </span>
+            </header>
+            <hr>
+
+            <span class="flex flex-col p-2 m-2 text-sm">
+                <h1 class="mb-4">Aluna na Universidade Federal de Itajubá - UNIFEI</h1>
+                <p class="mb-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas maxime error laborum debitis provident sed, tempore delectus ut voluptate et. Totam hic architecto porro reprehenderit. Hic obcaecati suscipit voluptates voluptatibus. <p>
+            </span>
+            
+            <hr>
+            <footer class=" mt-2 flex flex-row justify-between items-center">
+        
+                <span class="flex flex-row">
+                <h1> Preço/hora: </h1>
+                <h2 class="mr-4  font-semibold text-purple-900 ml-2" > R$ 75,00</h2>
+                </span>
+                <a class= " transition duration-200 ease-in-out transform hover:scale-110 p-2 flex flex-row bg-green-400 rounded h-10 items-center text-xs text-white font-bold" href="https://api.whatsapp.com/send?phone=5531985283137"> <img class="m-2" src="../../images/icons/whatsapp.svg" alt=""> Envie uma mensagem </a>
+            </footer>
+        </div>
+
+        <div id="card3" class="mb-2 bg-white rounded">
+            <header class="flex flex-row">
+                <img class=" m-2 rounded-full h-12 w-12" src="https://avatars2.githubusercontent.com/u/6643122?s=400&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4" alt="Foto de perfil do professor">
+                
+                <span class="m-2">
+                    <h1 class="font-bold text-purple-900 text-l"> Mayk Brito </h1>
+                    <h2 class="text-xs text-gray-700" > Desenvolvimento Fullstack </h2>
+                </span>
+            </header>
+            <hr>
+
+            <span class="flex flex-col p-2 m-2 text-sm">
+                <h1 class="mb-4">Instrutor na Rocketseat</h1>
+                <p class="mb-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas maxime error laborum debitis provident sed, tempore delectus ut voluptate et. Totam hic architecto porro reprehenderit. Hic obcaecati suscipit voluptates voluptatibus. <p>
+            </span>
+            
+            <hr>
+            <footer class=" mt-2 flex flex-row justify-between items-center">
+        
+                <span class="flex flex-row">
+                <h1> Preço/hora: </h1>
+                <h2 class="mr-4  font-semibold text-purple-900 ml-2" > R$ 90,00</h2>
+                </span>
+                <a class= " transition duration-200 ease-in-out transform hover:scale-110 p-2 flex flex-row bg-green-400 rounded h-10 items-center text-xs text-white font-bold" href="https://api.whatsapp.com/send?phone="> <img class="m-2" src="../../images/icons/whatsapp.svg" alt=""> Envie uma mensagem </a>
+            </footer>
+        </div>
+
+        <div id="card4" class="mb-2 bg-white rounded">
+            <header class="flex flex-row">
+                <img class=" m-2 rounded-full h-12 w-12" src="https://avatars2.githubusercontent.com/u/2254731?s=460&u=4fcc8ca9672eeb41ea800271831b7c687bc17054&v=4" alt="Foto de perfil do professor">
+                
+                <span class="m-2">
+                    <h1 class="font-bold text-purple-900 text-l"> Diego Fernandes </h1>
+                    <h2 class="text-xs text-gray-700" > Desenvolvimento Fullstack </h2>
+                </span>
+            </header>
+            <hr>
+
+            <span class="flex flex-col p-2 m-2 text-sm">
+                <h1 class="mb-4"> Instrutor na Rocketseat </h1>
+                <p class="mb-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas maxime error laborum debitis provident sed, tempore delectus ut voluptate et. Totam hic architecto porro reprehenderit. Hic obcaecati suscipit voluptates voluptatibus. <p>
+            </span>
+            
+            <hr>
+            <footer class=" mt-2 flex flex-row justify-between items-center">
+        
+                <span class="flex flex-row">
+                <h1> Preço/hora: </h1>
+                <h2 class="mr-4  font-semibold text-purple-900 ml-2" > R$ 75,00</h2>
+                </span>
+                <a class= " transition duration-200 ease-in-out transform hover:scale-110 p-2 flex flex-row bg-green-400 rounded h-10 items-center text-xs text-white font-bold" href="https://api.whatsapp.com/send?phone="> <img class="m-2" src="../../images/icons/whatsapp.svg" alt=""> Envie uma mensagem </a>
+            </footer>
+        </div>
+    </main>
+
+    <footer class=" m-8 flex flex-row items-center justify-between">
+        <img class="w-24 mr-8" src="../../images/logo.svg" alt="Logo proffy">
+        <a class="text-gray-500" href="#"> Sua plataforma de estudos online </a>
+
+    </footer>
+
+</body>
+</html>
